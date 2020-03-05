@@ -1,0 +1,13 @@
+<table>
+
+    <tr>
+        <td><h3><%= @word %></h3></td>
+        <td>Word Index</td>
+        <td>Title</td>
+    </tr>
+
+
+    <%= for location <- @locations do %>
+        <%= render "location_list.html", location: location %>
+    <% end %>
+</table>

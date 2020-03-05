@@ -1,0 +1,5 @@
+<ul>
+<%= for {name, locations} <- @report do %>
+    <%= render "single_word.html", word: name, locations: locations %>
+<% end %>
+</ul>

@@ -1,0 +1,2 @@
+<h1> <%= @event.title %> <small><%= @event.location %></small></h1>
+

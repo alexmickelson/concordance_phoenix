@@ -1,0 +1,5 @@
+<tr>
+    <td></td>
+    <td><%= @location.word_number %></td>
+    <td><%= @location.book %></td>
+</tr>
