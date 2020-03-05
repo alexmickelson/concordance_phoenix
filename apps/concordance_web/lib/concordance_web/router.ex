@@ -1,5 +1,5 @@
-defmodule ConcordanceWebWeb.Router do
-  use ConcordanceWebWeb, :router
+defmodule ConcordanceWeb.Router do
+  use ConcordanceWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,7 +13,7 @@ defmodule ConcordanceWebWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", ConcordanceWebWeb do
+  scope "/", ConcordanceWeb do
     pipe_through :browser
 
     get "/", PageController, :index
@@ -22,7 +22,7 @@ defmodule ConcordanceWebWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ConcordanceWebWeb do
+  # scope "/api", ConcordanceWeb do
   #   pipe_through :api
   # end
 end

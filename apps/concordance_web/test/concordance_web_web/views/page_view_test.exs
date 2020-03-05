@@ -1,3 +1,3 @@
-defmodule ConcordanceWebWeb.PageViewTest do
-  use ConcordanceWebWeb.ConnCase, async: true
+defmodule ConcordanceWeb.PageViewTest do
+  use ConcordanceWeb.ConnCase, async: true
 end

@@ -1,5 +1,5 @@
-defmodule ConcordanceWebWeb.ErrorView do
-  use ConcordanceWebWeb, :view
+defmodule ConcordanceWeb.ErrorView do
+  use ConcordanceWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

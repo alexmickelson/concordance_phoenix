@@ -1,8 +1,8 @@
-defmodule ConcordanceWebWeb.UserSocket do
+defmodule ConcordanceWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ConcordanceWebWeb.RoomChannel
+  # channel "room:*", ConcordanceWeb.RoomChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
@@ -26,7 +26,7 @@ defmodule ConcordanceWebWeb.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     ConcordanceWebWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
+  #     ConcordanceWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil

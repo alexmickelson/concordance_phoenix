@@ -1,5 +1,5 @@
-defmodule ConcordanceWebWeb.LayoutViewTest do
-  use ConcordanceWebWeb.ConnCase, async: true
+defmodule ConcordanceWeb.LayoutViewTest do
+  use ConcordanceWeb.ConnCase, async: true
 
   # When testing helpers, you may want to import Phoenix.HTML and
   # use functions such as safe_to_string() to convert the helper

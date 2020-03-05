@@ -1,4 +1,4 @@
-defmodule ConcordanceWebWeb.ConnCase do
+defmodule ConcordanceWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule ConcordanceWebWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use ConcordanceWebWeb.ConnCase, async: true`, although
+  by setting `use ConcordanceWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,10 +21,10 @@ defmodule ConcordanceWebWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      alias ConcordanceWebWeb.Router.Helpers, as: Routes
+      alias ConcordanceWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint ConcordanceWebWeb.Endpoint
+      @endpoint ConcordanceWeb.Endpoint
     end
   end
 

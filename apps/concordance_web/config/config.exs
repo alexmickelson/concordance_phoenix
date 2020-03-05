@@ -8,10 +8,10 @@
 use Mix.Config
 
 # Configures the endpoint
-config :concordance_web, ConcordanceWebWeb.Endpoint,
+config :concordance_web, ConcordanceWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "5jhw7HSK7NKxhgq6/pFE42c8Vle/KPR3LdFvwxFLghI99PrEvFDsB61nKkRF58OZ",
-  render_errors: [view: ConcordanceWebWeb.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: ConcordanceWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: ConcordanceWeb.PubSub, adapter: Phoenix.PubSub.PG2],
   live_view: [signing_salt: "4Abxzs/p"]
 

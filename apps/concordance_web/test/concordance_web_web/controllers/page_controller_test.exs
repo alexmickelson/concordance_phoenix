@@ -1,5 +1,5 @@
-defmodule ConcordanceWebWeb.PageControllerTest do
-  use ConcordanceWebWeb.ConnCase
+defmodule ConcordanceWeb.PageControllerTest do
+  use ConcordanceWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

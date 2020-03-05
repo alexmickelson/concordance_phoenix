@@ -1,5 +1,5 @@
-defmodule ConcordanceWebWeb.EventController do
-  use ConcordanceWebWeb, :controller
+defmodule ConcordanceWeb.EventController do
+  use ConcordanceWeb, :controller
 
   def show(conn, %{"id" => id}) do
     event = %{
@@ -9,5 +9,5 @@ defmodule ConcordanceWebWeb.EventController do
     }
     render conn, "details.html", event: event
   end
-  
+
 end

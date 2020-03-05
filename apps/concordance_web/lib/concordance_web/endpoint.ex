@@ -1,4 +1,4 @@
-defmodule ConcordanceWebWeb.Endpoint do
+defmodule ConcordanceWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :concordance_web
 
   # The session will be stored in the cookie and signed,
@@ -10,7 +10,7 @@ defmodule ConcordanceWebWeb.Endpoint do
     signing_salt: "XQtQOX0W"
   ]
 
-  socket "/socket", ConcordanceWebWeb.UserSocket,
+  socket "/socket", ConcordanceWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -43,5 +43,5 @@ defmodule ConcordanceWebWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug ConcordanceWebWeb.Router
+  plug ConcordanceWeb.Router
 end

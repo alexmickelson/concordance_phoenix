@@ -1,4 +1,4 @@
-defmodule ConcordanceWebWeb.ErrorHelpers do
+defmodule ConcordanceWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -39,9 +39,9 @@ defmodule ConcordanceWebWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(ConcordanceWebWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(ConcordanceWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(ConcordanceWebWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(ConcordanceWeb.Gettext, "errors", msg, opts)
     end
   end
 end
