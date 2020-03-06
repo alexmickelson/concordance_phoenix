@@ -24,16 +24,17 @@ defmodule ConcordanceWeb.Router do
     get "/", PageController, :index
     get "/events/:id", EventController, :show
     post "/add", ConcordanceController, :add
+    get "/report", ConcordanceController, :show
 
     get "/login", LoginController, :index
     post "/login", LoginController, :login
   end
 
-  scope "/report", ConcordanceWeb do
-    pipe_through :authorized
+  # scope "/report", ConcordanceWeb do
+  #   pipe_through :authorized
 
-    get "/", ConcordanceController, :show
-  end
+  #   get "/", ConcordanceController, :show
+  # end
 
   # Other scopes may use custom stacks.
   # scope "/api", ConcordanceWeb do

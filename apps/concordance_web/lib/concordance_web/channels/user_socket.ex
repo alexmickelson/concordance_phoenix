@@ -3,6 +3,7 @@ defmodule ConcordanceWeb.UserSocket do
 
   ## Channels
   # channel "room:*", ConcordanceWeb.RoomChannel
+  channel "report:get", ConcordanceWeb.ReportChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
