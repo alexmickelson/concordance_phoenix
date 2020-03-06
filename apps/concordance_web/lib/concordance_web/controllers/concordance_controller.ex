@@ -6,7 +6,7 @@ defmodule ConcordanceWeb.ConcordanceController do
     render conn, "report.html", report: report
   end
 
-  def add(conn, %{"foo" => %{"ending_id" => ending_id, "starting_id" => starting_id}}) do
+  def add(conn, %{"book_range" => %{"ending_id" => ending_id, "starting_id" => starting_id}}) do
 
     Main.get_books(String.to_integer(starting_id), String.to_integer(ending_id))
     redirect conn, to: Routes.concordance_path(conn, :show)

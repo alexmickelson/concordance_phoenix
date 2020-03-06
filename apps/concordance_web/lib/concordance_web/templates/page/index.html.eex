@@ -7,10 +7,12 @@
   <div class="form-group">
     <%= label f, :starting_id, "Starting Id" %>
     <%= text_input f, :starting_id, class: "form-control" %>
+    <%= error_tag f, :starting_id %>
   </div>
   <div class="form-group">
     <%= label f, :ending_id, "Ending Id" %>
     <%= text_input f, :ending_id, class: "form-control" %>
+    <%= error_tag f, :ending_id %>
   </div>
   <%= submit "Submit", class: "btn btn-primary pull-right" %>
 <% end %>
