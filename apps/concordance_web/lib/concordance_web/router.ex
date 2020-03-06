@@ -19,6 +19,7 @@ defmodule ConcordanceWeb.Router do
     get "/", PageController, :index
     get "/events/:id", EventController, :show
     get "/report", ConcordanceController, :show
+    post "/add", ConcordanceController, :add
   end
 
   # Other scopes may use custom stacks.
