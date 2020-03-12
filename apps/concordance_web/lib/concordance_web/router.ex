@@ -1,10 +1,12 @@
 defmodule ConcordanceWeb.Router do
   use ConcordanceWeb, :router
+  import Phoenix.LiveView.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_flash
+    plug :fetch_live_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -25,6 +27,7 @@ defmodule ConcordanceWeb.Router do
     get "/events/:id", EventController, :show
     post "/add", ConcordanceController, :add
     get "/report", ConcordanceController, :show
+    live "/reportlive", ReportLive
 
     get "/login", LoginController, :index
     post "/login", LoginController, :login

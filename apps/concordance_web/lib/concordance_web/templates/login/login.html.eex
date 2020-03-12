@@ -2,3 +2,4 @@
     <%= text_input f, :username %>
     <%= submit "Login" %>
 <% end %>
+

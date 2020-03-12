@@ -22,12 +22,16 @@ defmodule Main do
   def print_concordance_report() do
     #file = File.open!("concordance.csv", [:write, :utf8])
 
-    # report =
+    report =
     ConcordanceSup.get_children()
+
+    # ConcordanceWeb.Endpoint.broadcast("reports", "new_reports", %{reports: report})
+    # :ok = Phoenix.PubSub.subscribe(ConcordanceWeb.PubSub, "reports")
+    :ok = Phoenix.PubSub.broadcast(ConcordanceWeb.PubSub, "reports", {:reports, report})
     # |> IO.inspect(limit: 5)
     # |> Enum.sort(fn {word1, _}, {word2, _} -> word1 < word2 end)
     # |> IO.inspect(pretty: true, limit: 500)
 
-    # IO.puts("all done.")
+    IO.puts("all done.")
   end
 end

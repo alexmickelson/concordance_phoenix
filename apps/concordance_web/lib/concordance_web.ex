@@ -42,6 +42,7 @@ defmodule ConcordanceWeb do
       import ConcordanceWeb.ErrorHelpers
       import ConcordanceWeb.Gettext
       alias ConcordanceWeb.Router.Helpers, as: Routes
+      import Phoenix.LiveView
     end
   end
 
